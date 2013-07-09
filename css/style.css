@@ -1,0 +1,121 @@
+body {
+  font-size: 12px;
+  zoom: 1;
+  padding: 1em;
+}
+
+ul li {
+  display: block;
+  list-style-type: none;
+}
+
+.time-table {
+  position: relative;
+  margin-bottom: 1em;
+  width: 1160px;
+  height: 60px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.time-table ul,
+.shift ul {
+  padding: 0;
+  margin: 0;
+  margin-left: 200px;
+  width: 960px;
+}
+
+ul.hour,
+ul.hour li {
+  height: 25px;
+}
+
+.shift ul,
+.shift ul li {
+  height: 35px;
+}
+
+.time-table ul li {
+  float: left;
+  width: 27px;
+  margin-left: 12px;
+}
+
+.shift ul li {
+  float: left;
+  width: 9px;
+  margin: 0;
+}
+
+.personal-schedule {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 100%;
+}
+
+.personal-schedule .name {
+  height: 100%;
+}
+
+.shift {
+  position: relative;
+  float: left;
+  width: 960px;
+}
+
+.ui-resizable {
+  position: absolute;
+  left: 0;
+}
+
+.ui-resizable-handle {
+  position: absolute;
+  background-color: #FF0000;
+  border: none !important;
+}
+
+.shift .resizable {
+  position: absolute; 
+  width: 21px; 
+  height: 20px; 
+  margin-top:7px; 
+  margin-left: 199px;
+  background-color: #ccc;
+}
+
+.start-of-date {
+}
+
+/* ================================ */
+/* ボーダー                         */
+/* ================================ */
+.time-table {
+  border-top: 1px solid #ccc;
+}
+
+.time-table ul li {
+  border-right: 1px solid #ccc;
+}
+
+.time-table ul li.end-of-date,
+.shift ul li.end-of-date {
+  border-right: 1px solid #fff;
+}
+
+.shift ul li {
+  border-top: 1px solid #ccc;
+}
+
+.personal-schedule .name {
+  border-right: 1px solid #ccc;
+}
+
+/* ================================ */
+/* 結果                             */
+/* ================================ */
+#time {
+  width: 100%;
+}
